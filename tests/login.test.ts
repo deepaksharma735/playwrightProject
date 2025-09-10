@@ -16,6 +16,6 @@ test("Login to Centrl", async () => {
     await page.fill("//*[@placeholder='Email' and @formcontrolname='email' ]", "sandbox@usersgroups.com")
     await page.click("//*[contains(text(),'Continue')]")
     await page.fill("//*[@formcontrolname='password' and @placeholder='Password']", "Centrl@123")
-
-
+    
 })
+

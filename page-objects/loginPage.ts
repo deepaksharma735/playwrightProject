@@ -1,6 +1,6 @@
 // fixtures/LoginPage.ts
 import { Page, expect } from '@playwright/test';
-import { HomePage } from './HomePage'; // Import HomePage
+import { HomePage } from '../page-objects/homePage'; // Import HomePage
 
 export class LoginPage {
     readonly page: Page;
@@ -42,5 +42,6 @@ export class LoginPage {
         
         // Return a new instance of HomePage to enable chaining to the next page
         return new HomePage(this.page);
+
     }
 }
